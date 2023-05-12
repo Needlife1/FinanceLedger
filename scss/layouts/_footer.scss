@@ -1,0 +1,26 @@
+.footer {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.footer-container {
+  background-color: var(--333333);
+}
+
+.footer-list {
+  margin-bottom: 10px;
+  @include flex-position(flex, center, center);
+  gap: 25px;
+  padding-top: 10px;
+}
+
+.footer-icon {
+  fill: var(--FFFFFF);
+}
+
+.footer-text {
+  @include font(400, 18px, 1.56);
+  text-align: center;
+  color: var(--FFFFFF);
+  padding-bottom: 15px;
+}

@@ -1,0 +1,41 @@
+.services-list {
+  padding-top: 40px;
+  padding-bottom: 19px;
+  @include flex-position(flex, null, space-around);
+}
+
+.services-item {
+  @include flex-position(flex, center, null);
+  flex-direction: column;
+}
+
+.services-item-icon {
+  width: 67px;
+  height: 67px;
+  background: var(--28A745);
+  border-radius: 33.5px;
+  margin-bottom: 15px;
+  @include flex-position(flex, center, center);
+}
+
+.services-icon {
+  fill: var(--FFFFFF);
+}
+
+.services-item-box {
+  @include flex-position(flex, center, null);
+  flex-direction: column;
+}
+
+.services-item-titel {
+  @include font(400, 20px, 1.65);
+  color: var(--333333);
+  margin-bottom: 16px;
+}
+
+.services-item-text {
+  @include font(null, 18px, 1.56);
+  color: var(--333333);
+  max-width: 362px;
+  text-align: center;
+}

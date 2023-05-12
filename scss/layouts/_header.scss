@@ -1,0 +1,70 @@
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 15px 0px;
+}
+
+.header-container {
+  padding-top: 11px;
+  padding-bottom: 16px;
+  width: 100%;
+
+  @include tablet {
+    @include flex-position(flex, center, space-between);
+  }
+}
+
+.header-logo-link {
+  @include flex-position(flex, center, null);
+  @media screen and (max-width: 797.9px) {
+    justify-content: center;
+    margin-bottom: 11px;
+  }
+
+  gap: 4px;
+  @include tablet {
+    gap: 8px;
+  }
+}
+
+.header-icon {
+  fill: var(--28A745);
+}
+
+.header-fiors-logo {
+  @include font(400, 35px, 1.2);
+  color: var(--28A745);
+}
+
+.header-second-logo {
+  @include font(400, 35px, 1.2);
+  color: var(--FFFFFF);
+}
+
+.header-list {
+  display: flex;
+  gap: 14px;
+  @media screen and (max-width: 797.9px) {
+    justify-content: space-evenly;
+  }
+  @include tablet {
+    gap: 18px;
+  }
+  @include desktop {
+    gap: 38px;
+  }
+}
+
+.header-link {
+  @include font(null, 16px, 1.6);
+
+  @include tablet {
+    @include font(null, 18px, 1.55);
+  }
+  color: var(--FFFFFF);
+
+  &:hover,
+  &:focus {
+    color: var(--28A745);
+  }
+}

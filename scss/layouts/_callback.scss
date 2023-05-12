@@ -1,0 +1,41 @@
+.callback-container {
+  display: flex;
+  background-color: var(--F4F4F4);
+  gap: 30px;
+}
+
+.callback-box {
+  padding-top: 78px;
+  padding-bottom: 82px;
+}
+
+.callback-title {
+  @include font(300, 38px, 1.26);
+  color: var(--333333);
+  margin-bottom: 34px;
+}
+
+.callback-input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  margin-bottom: 36px;
+}
+
+.callback-btn {
+  @include font(400, 18px, 1.38);
+  text-align: center;
+  color: var(--FFFFFF);
+  min-width: 100%;
+  height: 42px;
+  background-color: var(--28A745);
+  border-radius: 5px;
+  border: none;
+  margin-top: 24px;
+
+  &:active {
+    box-shadow: 1px 1px 26px 12px rgba(98, 241, 9, 0.42);
+    -webkit-box-shadow: 1px 1px 26px 12px rgba(98, 241, 9, 0.42);
+    -moz-box-shadow: 1px 1px 26px 12px rgba(98, 241, 9, 0.42);
+  }
+}

@@ -1,0 +1,46 @@
+.about-container {
+  display: flex;
+}
+
+.about-box {
+  padding: 84px 0px 84px 30px;
+  background-color: var(--28A745);
+  flex-grow: 1;
+}
+
+.about-top-text {
+  @include font(null, 20px, 1.65);
+  color: var(--FFFFFF);
+  margin-bottom: 5px;
+}
+
+.about-titel {
+  @include font(300, 28px, 1.26);
+  color: var(--FFFFFF);
+  margin-bottom: 26px;
+}
+
+.about-bottom-text {
+  @include font(null, 18px, 1.56);
+  color: var(--FFFFFF);
+  margin-bottom: 17px;
+  max-width: 606px;
+}
+
+.about-btn {
+  font-family: inherit;
+  @include font(400, 18px, 1.56);
+  color: var(--FFFFFF);
+  cursor: pointer;
+  min-width: 167px;
+  height: 50px;
+  border: 1px solid var(--FFFFFF);
+  border-radius: 5px;
+  background-color: transparent;
+
+  &:active {
+    box-shadow: 1px 1px 26px 12px rgba(98, 241, 9, 0.42);
+    -webkit-box-shadow: 1px 1px 26px 12px rgba(98, 241, 9, 0.42);
+    -moz-box-shadow: 1px 1px 26px 12px rgba(98, 241, 9, 0.42);
+  }
+}

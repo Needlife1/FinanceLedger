@@ -1,0 +1,17 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  @include mobile {
+    width: 350px;
+  }
+
+  @include tablet {
+    width: 798px;
+  }
+
+  @include desktop {
+    width: 1390pxpx;
+  }
+}
